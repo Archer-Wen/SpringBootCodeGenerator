@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="761571c6-43b7-42bc-9bbc-32900befd1af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator-web/src/main/resources/templates/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/generator-web/src/main/resources/templates/index.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/generator-web/target/" />
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/dao.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="418">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -37,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/mybatis.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="1045">
               <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
             </state>
           </provider>
@@ -46,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/model.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="551">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
@@ -62,8 +61,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="125" column="108" selection-start-line="125" selection-start-column="108" selection-end-line="125" selection-end-column="108" />
+            <state relative-caret-position="266">
+              <caret line="255" column="298" selection-start-line="255" selection-start-column="298" selection-end-line="255" selection-end-column="298" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="323">
+                <caret line="17" selection-start-line="17" selection-end-line="17" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -92,11 +103,12 @@
         <option value="$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/dao.ftl" />
         <option value="$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/model.ftl" />
         <option value="$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/mybatis.ftl" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/generator-web/src/main/resources/templates/index.ftl" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -202,12 +214,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557370827422</updated>
       <workItem from="1557370831210" duration="6375000" />
-      <workItem from="1557468225627" duration="3563000" />
+      <workItem from="1557468225627" duration="4970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9938000" />
+    <option name="totallyTimeSpent" value="11345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -251,13 +263,6 @@
     <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/service.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/dao.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generator-web/src/main/java/com/softdev/system/generator/GeneratorWebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -268,20 +273,6 @@
     <entry file="file://$PROJECT_DIR$/generator-web/generator-web.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/mybatis.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/model.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/common/common-import.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -290,10 +281,41 @@
         <state relative-caret-position="-233" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/model.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/dao.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/code-generator/mybatis/mybatis.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="17" selection-start-line="17" selection-end-line="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/generator-web/src/main/resources/templates/index.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="125" column="108" selection-start-line="125" selection-start-column="108" selection-end-line="125" selection-end-column="108" />
+        <state relative-caret-position="266">
+          <caret line="255" column="298" selection-start-line="255" selection-start-column="298" selection-end-line="255" selection-end-column="298" />
         </state>
       </provider>
     </entry>
