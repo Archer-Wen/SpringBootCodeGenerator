@@ -7,7 +7,7 @@ import java.util.List;
 * ${classInfo.classComment}
 * @author ${authorName} ${.now?string('yyyy-MM-dd')}
 */
-@Component
+@Repository
 public interface ${classInfo.className}Dao {
 
     /**
