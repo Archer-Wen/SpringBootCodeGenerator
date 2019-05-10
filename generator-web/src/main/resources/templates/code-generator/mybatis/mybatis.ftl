@@ -58,12 +58,13 @@
 
     <update id="update" parameterType="${packageName}.entity.${classInfo.className}Entity">
         UPDATE ${classInfo.tableName}
-        SET
+        <set>
         <#list classInfo.fieldList as fieldItem >
         <#if fieldItem.columnName != "id_" && fieldItem.columnName != "AddTime" && fieldItem.columnName != "UpdateTime" >
-            ${r"<if test ='null != "}${fieldItem.fieldName}${r"'>"}${fieldItem.columnName} = ${r"#{"}${fieldItem.fieldName}${r"}"},${r"</if>"}
+            ${r"<if test ='null != "}${fieldItem.fieldName}${r"'>"}${fieldItem.columnName} = ${r"#{"}${fieldItem.fieldName}${r"}"}<#if fieldItem_has_next>,</#if>${r"</if>"}
         </#if>
         </#list>
+        </set>
         WHERE `id_` = ${r"#{"}id${r"}"}
     </update>
 
@@ -77,7 +78,7 @@
     <select id="pageList" resultMap="BaseResultMap">
         SELECT <include refid="Base_Column_List" />
         FROM ${classInfo.tableName}
-        LIMIT ${r"#{offset}"}, ${r"#{pagesize}"}
+        LIMIT ${r"#{offset}"}, ${r"#{pageSize}"}
     </select>
 
     <select id="pageListCount" resultType="java.lang.Integer">

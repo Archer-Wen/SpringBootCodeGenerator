@@ -12,7 +12,7 @@ public interface ${classInfo.className}Dao {
 
     /**
     * 新增
-    * @param ${classInfo.className}
+    * @param ${classInfo.className}Entity
     */
     public Integer insert(@Param("${classInfo.className?uncap_first}") ${classInfo.className}Entity ${classInfo.className?uncap_first});
 
@@ -24,7 +24,7 @@ public interface ${classInfo.className}Dao {
 
     /**
     * 更新
-    * @param ${classInfo.className}
+    * @param ${classInfo.className}Entity
     */
     public Integer update(@Param("${classInfo.className?uncap_first}") ${classInfo.className}Entity ${classInfo.className?uncap_first});
 
