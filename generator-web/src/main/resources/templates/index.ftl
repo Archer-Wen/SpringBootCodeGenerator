@@ -113,11 +113,11 @@
             <div class="input-group-prepend">
                 <span class="input-group-text">作者名称</span>
             </div>
-            <input type="text" class="form-control" id="authorName" name="authorName" placeholder="大狼狗">
+            <input type="text" class="form-control" id="authorName" name="authorName" placeholder="wenliheng">
             <div class="input-group-prepend">
                 <span class="input-group-text">包名路径</span>
             </div>
-            <input type="text" class="form-control" id="packageName" name="packageName" placeholder="com.softdev.system">
+            <input type="text" class="form-control" id="packageName" name="packageName" placeholder="com.wenliheng">
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
