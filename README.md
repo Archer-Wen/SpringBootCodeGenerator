@@ -13,6 +13,7 @@
 - 修改load的方法名为selectByPrimaryKey
 - 修改dao文件所有参数为包装类
 - 删除dao接口 ``pageListCount()``方法中无用的分页参数
+- 修改dao接口注解为@Repository
 
 #### update by Archer-Wen
 如喜欢本项目，欢迎star & fork
