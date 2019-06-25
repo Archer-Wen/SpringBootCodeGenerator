@@ -19,7 +19,7 @@
     </#if>
     </sql>
 
-    <insert id="insert" useGeneratedKeys="true" keyColumn="id" parameterType="${packageName}.entity.${classInfo.className}Entity">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="${packageName}.entity.${classInfo.className}Entity">
         INSERT INTO ${classInfo.tableName}
         <trim prefix="(" suffix=")" suffixOverrides=",">
         <#if classInfo.fieldList?exists && classInfo.fieldList?size gt 0>
@@ -86,4 +86,15 @@
         FROM ${classInfo.tableName}
     </select>
 
+    <select id="selectBySelective" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM ${classInfo.tableName}
+        <where>
+            <#list classInfo.fieldList as fieldItem >
+                <#if fieldItem.columnName != "id_">
+            ${r"<if test ='null != "}${fieldItem.fieldName}${r"'>"}<#if fieldItem_index != 0>AND </#if>${fieldItem.columnName} = ${r"#{"}${fieldItem.fieldName}${r"}"}${r"</if>"}
+                </#if>
+            </#list>
+        </where>
+    </select>
 </mapper>
