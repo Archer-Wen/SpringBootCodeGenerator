@@ -113,11 +113,11 @@
             <div class="input-group-prepend">
                 <span class="input-group-text">作者名称</span>
             </div>
-            <input type="text" class="form-control" id="authorName" name="authorName" placeholder="大狼狗">
+            <input type="text" class="form-control" id="authorName" name="authorName" placeholder="wenliheng">
             <div class="input-group-prepend">
                 <span class="input-group-text">包名路径</span>
             </div>
-            <input type="text" class="form-control" id="packageName" name="packageName" placeholder="com.softdev.system">
+            <input type="text" class="form-control" id="packageName" name="packageName" placeholder="com.wenliheng">
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -253,7 +253,7 @@ CREATE TABLE `userinfo` (
         <footer class="bd-footer text-muted" role="contentinfo">
             <div class="container">
                <strong>Copyright &copy; ${.now?string('yyyy')}-2022 &nbsp;
-                   <p><a href="https://github.com/moshowgame/SpringBootCodeGenerator">SpringBootCodeGenerator</a>由<a href="https://blog.csdn.net/moshowgame" target="_blank">@Moshow/大狼狗/郑锴</a> 开发维护. 由 <a href="https://www.bejson.com">BeJson三叔 </a> 提供在线版本。</p>
+                   <p><a href="https://github.com/moshowgame/SpringBootCodeGenerator">SpringBootCodeGenerator</a>由<a href="https://blog.csdn.net/moshowgame" target="_blank">@Moshow/大狼狗/郑锴</a> 开发维护. 由 <a href="https://www.bejson.com">BeJson三叔 </a> 提供在线版本。</p>.由<a href="https://github.com/Archer-Wen">Archer-Wen</a>修改。
             </div>
         </footer>
     </footer>

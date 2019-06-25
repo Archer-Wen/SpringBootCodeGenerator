@@ -19,7 +19,7 @@
     </#if>
     </sql>
 
-    <insert id="insert" useGeneratedKeys="true" keyColumn="id" parameterType="${packageName}.entity.${classInfo.className}Entity">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="${packageName}.entity.${classInfo.className}Entity">
         INSERT INTO ${classInfo.tableName}
         <trim prefix="(" suffix=")" suffixOverrides=",">
         <#if classInfo.fieldList?exists && classInfo.fieldList?size gt 0>
@@ -58,12 +58,13 @@
 
     <update id="update" parameterType="${packageName}.entity.${classInfo.className}Entity">
         UPDATE ${classInfo.tableName}
-        SET
+        <set>
         <#list classInfo.fieldList as fieldItem >
         <#if fieldItem.columnName != "id_" && fieldItem.columnName != "AddTime" && fieldItem.columnName != "UpdateTime" >
-            ${r"<if test ='null != "}${fieldItem.fieldName}${r"'>"}${fieldItem.columnName} = ${r"#{"}${fieldItem.fieldName}${r"}"},${r"</if>"}
+            ${r"<if test ='null != "}${fieldItem.fieldName}${r"'>"}${fieldItem.columnName} = ${r"#{"}${fieldItem.fieldName}${r"}"}<#if fieldItem_has_next>,</#if>${r"</if>"}
         </#if>
         </#list>
+        </set>
         WHERE `id_` = ${r"#{"}id${r"}"}
     </update>
 
@@ -77,7 +78,7 @@
     <select id="pageList" resultMap="BaseResultMap">
         SELECT <include refid="Base_Column_List" />
         FROM ${classInfo.tableName}
-        LIMIT ${r"#{offset}"}, ${r"#{pagesize}"}
+        LIMIT ${r"#{offset}"}, ${r"#{pageSize}"}
     </select>
 
     <select id="pageListCount" resultType="java.lang.Integer">
@@ -85,4 +86,15 @@
         FROM ${classInfo.tableName}
     </select>
 
+    <select id="selectBySelective" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM ${classInfo.tableName}
+        <where>
+            <#list classInfo.fieldList as fieldItem >
+                <#if fieldItem.columnName != "id_">
+            ${r"<if test ='null != "}${fieldItem.fieldName}${r"'>"}<#if fieldItem_index != 0>AND </#if>${fieldItem.columnName} = ${r"#{"}${fieldItem.fieldName}${r"}"}${r"</if>"}
+                </#if>
+            </#list>
+        </where>
+    </select>
 </mapper>
