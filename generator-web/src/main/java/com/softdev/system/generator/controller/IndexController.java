@@ -37,7 +37,7 @@ public class IndexController {
     @ResponseBody
     public ReturnT<Map<String, String>> codeGenerate(String tableSql,
                                                      //2019-2-10 liutf 修改为@RequestParam参数校验
-                                                     @RequestParam(required = false, defaultValue = "大狼狗") String authorName,
+                                                     @RequestParam(required = false, defaultValue = "wenliheng") String authorName,
                                                      @RequestParam(required = false, defaultValue = "com.softdev.system")String packageName,
                                                      @RequestParam(required = false, defaultValue = "ApiReturnUtil")String returnUtil
     ) {
