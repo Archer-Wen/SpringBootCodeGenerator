@@ -14,7 +14,7 @@ public interface ${classInfo.className}Dao {
     * 新增
     * @param ${classInfo.className}Entity
     */
-    public Integer insert(@Param("${classInfo.className?uncap_first}") ${classInfo.className}Entity ${classInfo.className?uncap_first});
+    public Integer insert(${classInfo.className}Entity ${classInfo.className?uncap_first});
 
     /**
     * 删除
@@ -26,7 +26,7 @@ public interface ${classInfo.className}Dao {
     * 更新
     * @param ${classInfo.className}Entity
     */
-    public Integer update(@Param("${classInfo.className?uncap_first}") ${classInfo.className}Entity ${classInfo.className?uncap_first});
+    public Integer update(${classInfo.className}Entity ${classInfo.className?uncap_first});
 
     /**
     * 根据主键查询一个实体
@@ -46,4 +46,9 @@ public interface ${classInfo.className}Dao {
     */
     public Integer pageListCount();
 
+    /**
+    *  根据条件查询符合的实体
+    *  @param ${classInfo.className}Entity
+    */
+    public List<${classInfo.className}Entity> selectBySelective(${classInfo.className}Entity ${classInfo.className?uncap_first});
 }
